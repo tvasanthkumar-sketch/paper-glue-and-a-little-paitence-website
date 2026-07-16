@@ -480,7 +480,7 @@ addToCart(bouquetName,price);
 
 
 // Load cart when page opens
-
+console.log("Cart loaded:", cart);
 window.onload = function(){
 
 

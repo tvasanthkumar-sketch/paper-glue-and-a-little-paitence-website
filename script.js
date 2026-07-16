@@ -390,13 +390,18 @@ if(styleChoice !== "Book Paper"){
 
 }
 
-if(styleChoice !== "Book Paper"){
 
-    bouquetName += " - " + colour;
+addToCart(bouquetName, price);
 
 }
 
-addToCart(bouquetName, price);
+function clearCart(){
+
+    localStorage.removeItem("cart");
+
+    cart = [];
+
+    updateCartCount();
 
 }
 // Load cart when page opens

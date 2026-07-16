@@ -328,8 +328,6 @@ displayCart();
 
 updateCartCount();
 
-}
-
 
 function addCustomBouquet(){
 

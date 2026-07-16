@@ -73,38 +73,37 @@ function addToCart(name, price, quantity = 1){
 
 function addProductToCart(button, productName){
 
-
     let card = button.parentElement;
 
 
-    let option =
-    card.querySelector(".product-option").value;
-
-
-    let quantity =
-    card.querySelector(".quantity").value;
-
+    let option = card.querySelector(".product-option").value;
 
 
     let details = option.split("|");
 
 
-
     let price = Number(details[0]);
 
-    let material = details[1];
+    let choice = details[1];
 
+
+    let quantityBox = card.querySelector(".quantity");
+
+    let quantity = 1;
+
+
+    if(quantityBox){
+        quantity = Number(quantityBox.value);
+    }
 
 
     addToCart(
-        productName + " - " + material,
+        productName + " - " + choice,
         price,
-        Number(quantity)
+        quantity
     );
 
-
 }
-
 
 
 

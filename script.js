@@ -383,7 +383,6 @@ if(priceBox){
 "%0A%0ANotes:%0A" + notes;
 
 event.target.submit();
-
 }
 
 

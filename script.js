@@ -323,14 +323,11 @@ function sendOrder(event){
 
     localStorage.removeItem("cart");
 
-cart = [];
+cart.length = 0;
 
 displayCart();
 
 updateCartCount();
-
-}
-
 
 
     orderText +=

@@ -294,6 +294,8 @@ function updateCartCount(){
 // Send order email
 function sendOrder(event){
 
+    event.preventDefault();
+
     let flowersBox = document.getElementById("flowers");
     let priceBox = document.getElementById("price");
     let colourBox = document.getElementById("colour");
@@ -320,18 +322,10 @@ function sendOrder(event){
     }
 
 
-    localStorage.removeItem("cart");
-
-cart = [];
-
-displayCart();
-
-updateCartCount();
-
-    }
 
 
-function addCustomBouquet(){
+
+function addCustomBouquet()
 
     let flowers = [];
 

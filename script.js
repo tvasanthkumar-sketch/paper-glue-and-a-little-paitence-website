@@ -295,63 +295,41 @@ function updateCartCount(){
 
 function sendOrder(event){
 
-    event.preventDefault();
-
-    let name =
-    document.getElementById("customer-name").value;
-
-
-    let email =
-    document.getElementById("customer-email").value;
-
-
-    let notes =
-    document.getElementById("order-notes").value;
-
-   let phone =
-    document.getElementById("customer-phone").value;
-
-
-     let method =
-      document.getElementById("order-method").value;
-
-    let orderText =
-    "New Handmade Order 🌸%0A%0A";
-
-
-
-    orderText +=
-    "Customer: " + name + "%0A";
-
-
-    orderText +=
-    "Email: " + email + "%0A%0A";
-
-
-
-    orderText +=
-    "Items:%0A";
-
-
+    let flowersBox = document.getElementById("flowers");
+    let priceBox = document.getElementById("price");
+    let colourBox = document.getElementById("colour");
 
     let total = 0;
 
-
-
     cart.forEach(function(item){
-
-
-        orderText +=
-        "- " + item.name +
-        " x" + item.quantity +
-        " ($" + (item.price * item.quantity) + ")%0A";
-
-
-
         total += item.price * item.quantity;
-
-
     });
+
+
+    if(flowersBox){
+        flowersBox.value = cart.map(item => item.name).join(", ");
+    }
+
+
+    if(priceBox){
+        priceBox.value = "$" + total;
+    }
+
+
+    if(colourBox){
+        colourBox.value = cart.map(item => item.colour || "").join(", ");
+    }
+
+
+    localStorage.removeItem("cart");
+
+cart = [];
+
+displayCart();
+
+updateCartCount();
+
+}
 
 
 

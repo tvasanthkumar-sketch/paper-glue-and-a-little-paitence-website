@@ -1,3 +1,5 @@
+console.log("THIS IS THE CART SCRIPT");
+
 // ==========================
 // CART SYSTEM
 // ==========================

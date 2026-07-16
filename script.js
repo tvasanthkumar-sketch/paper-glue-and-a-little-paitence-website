@@ -16,8 +16,7 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 // Add item to cart
 
 function addToCart(name, price, quantity = 1){
-console.log("ADDING PRODUCT:", productName);
-
+console.log("ADDING PRODUCT:", name);
     let existingItem = cart.find(function(item){
 
         return item.name === name;

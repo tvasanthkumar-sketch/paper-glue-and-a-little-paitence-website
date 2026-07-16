@@ -401,6 +401,8 @@ function clearCart(){
 
     cart = [];
 
+    displayCart();
+
     updateCartCount();
 
 }

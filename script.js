@@ -405,15 +405,13 @@ if(styleChoice !== "Book Paper"){
 
 if(styleChoice !== "Book Paper"){
 
+    bouquetName += " - " + colour;
 
 }
 
-addToCart(bouquetName,price);
+addToCart(bouquetName, price);
 
 }
-
-
-
 // Load cart when page opens
 console.log("Cart loaded:", cart);
 document.addEventListener("DOMContentLoaded", function(){

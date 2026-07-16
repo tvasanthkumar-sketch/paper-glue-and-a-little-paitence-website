@@ -297,6 +297,9 @@ function sendOrder(event){
     event.preventDefault();
 
     let flowersBox = document.getElementById("flowers");
+    flowersBox.value = cart.map(item => 
+    item.quantity + "x " + item.name
+).join(", ");
     let priceBox = document.getElementById("price");
     let colourBox = document.getElementById("colour");
 

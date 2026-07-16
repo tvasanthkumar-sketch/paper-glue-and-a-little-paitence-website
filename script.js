@@ -380,10 +380,6 @@ localStorage.removeItem("cart");
 
 }
 
-document.getElementById("flowers").value = cart.map(item => item.name).join(", ");
-document.getElementById("colour").value = cart.map(item => item.colour).join(", ");
-document.getElementById("price").value = "$" + total;
-
 
 
 
@@ -470,6 +466,13 @@ if(styleChoice !== "Book Paper"){
 addToCart(bouquetName,price);
 
 }
+
+
+document.getElementById("flowers").value =
+cart.map(item => item.name).join(", ");
+
+document.getElementById("price").value =
+"$" + total;
 // Load cart when page opens
 
 window.onload = function(){

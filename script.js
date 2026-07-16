@@ -303,11 +303,6 @@ function sendOrder(event){
     });
 
 
-    if(flowersBox){
-        flowersBox.value = cart.map(item => item.name).join(", ");
-    }
-
-
     if(priceBox){
         priceBox.value = "$" + total;
     }
@@ -317,11 +312,11 @@ function sendOrder(event){
         colourBox.value = cart.map(item => item.colour || "").join(", ");
     }
 
+   }
 
 
 
-
-function addCustomBouquet()
+function addCustomBouquet() {
 
     let flowers = [];
 

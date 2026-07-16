@@ -146,7 +146,9 @@ $0
 
 
 <form action="https://formspree.io/f/mkodovwq" method="POST" class="custom-box">
-<input type="hidden" name="_subject" value="New Order 🌸">
+  <input type="hidden" name="_subject" value="New Handmade Bouquet Order 🌸">
+
+
 <h2>
 
 📩 Place Your Order
@@ -167,9 +169,8 @@ Name:
 type="text" 
 id="customer-name"
 name="Customer Name"
-placeholder="Your name">
+placeholder="Your name"
 required>
-
 
 
 
@@ -184,8 +185,7 @@ Email:
 type="email"
 id="customer-email"
 name="Email"
-placeholder="Your email">
-required>
+placeholder="Your email"required>
   
 <label>
 Phone:
@@ -195,14 +195,14 @@ Phone:
 type="text"
 id="customer-phone"
 name="Phone"
-placeholder="Your phone">
+placeholder="Your phone"
 required>
-
+  
 <label>
 Order Method:
 </label>
 
-<select id="order-method" name="Delivery or Pickup"> required>
+<select id="order-method" name="Delivery or Pickup" required>
 
 <option>
 Pickup
@@ -228,14 +228,12 @@ id="order-notes"
 name="Order Notes"
 placeholder="Any special requests..."></textarea>
 
-<input type="hidden" name="flowers" id="flowers">
-<input type="hidden" name="colour" id="colour">
-<input type="hidden" name="price" id="price">
 
 
 
 
-<button class="button" type="submit" onclick="sendOrder(event)">
+
+<button class="button" type="submit">
 Send Order Request
 </button>
 

@@ -285,9 +285,7 @@ function updateCartCount(){
 
 
 // Send order email
-function sendOrder(event){
-
-    event.preventDefault();
+function sendOrder(){
 
     let flowersBox = document.getElementById("flowers");
     let priceBox = document.getElementById("price");
@@ -315,9 +313,6 @@ function sendOrder(event){
     if(colourBox){
         colourBox.value = cart.map(item => item.colour || "").join(", ");
     }
-
-
-    event.target.submit();
 
 }
 

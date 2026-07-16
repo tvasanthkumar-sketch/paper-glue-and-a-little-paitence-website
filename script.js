@@ -468,11 +468,16 @@ addToCart(bouquetName,price);
 }
 
 
-document.getElementById("flowers").value =
-cart.map(item => item.name).join(", ");
+let flowersBox = document.getElementById("flowers");
+let priceBox = document.getElementById("price");
 
-document.getElementById("price").value =
-"$" + total;
+if(flowersBox){
+    flowersBox.value = cart.map(item => item.name).join(", ");
+}
+
+if(priceBox){
+    priceBox.value = "$" + total;
+}
 // Load cart when page opens
 
 window.onload = function(){

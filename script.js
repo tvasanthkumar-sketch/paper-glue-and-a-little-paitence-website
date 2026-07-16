@@ -380,7 +380,9 @@ localStorage.removeItem("cart");
 
 }
 
-
+document.getElementById("flowers").value = cart.map(item => item.name).join(", ");
+document.getElementById("colour").value = cart.map(item => item.colour).join(", ");
+document.getElementById("price").value = "$" + total;
 
 
 

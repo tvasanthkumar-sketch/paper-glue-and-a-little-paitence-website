@@ -292,7 +292,6 @@ function updateCartCount(){
 
 
 // Send order email
-
 function sendOrder(event){
 
     let flowersBox = document.getElementById("flowers");
@@ -323,45 +322,9 @@ function sendOrder(event){
 
     localStorage.removeItem("cart");
 
-cart.length = 0;
+    cart = [];
 
-displayCart();
-
-updateCartCount();
-
-
-    orderText +=
-      
-    orderText +=
-      
-"Email: " + email + "%0A";
-
-orderText +=
-"Phone: " + phone + "%0A";
-
-orderText +=
-"Order Method: " + method + "%0A%0A";
-let flowersBox = document.getElementById("flowers");
-let priceBox = document.getElementById("price");
-
-if(flowersBox){
-    flowersBox.value = cart.map(item => item.name).join(", ");
 }
-
-if(priceBox){
-    priceBox.value = "$" + total;
-}
-   
-"%0ATotal: $" + total;
-
- orderText +=
-"%0A%0ANotes:%0A" + notes;
-
-event.target.submit();
-}
-
-
-
 
 
 function addCustomBouquet(){

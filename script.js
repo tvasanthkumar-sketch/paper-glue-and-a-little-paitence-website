@@ -293,8 +293,9 @@ function updateCartCount(){
 
 // Send order email
 
-function sendOrder(){
-event.preventDefault();
+function sendOrder(event){
+
+    event.preventDefault();
 
     let name =
     document.getElementById("customer-name").value;
@@ -381,12 +382,7 @@ if(priceBox){
  orderText +=
 "%0A%0ANotes:%0A" + notes;
 
-document.querySelector("form").submit();
-    
- window.location.href =
- "mailto:taniavasanth@gmail.com?subject=New Handmade Order&body="
-  + orderText;
-
+event.target.submit();
 
 }
 

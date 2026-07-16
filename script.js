@@ -322,7 +322,11 @@ function sendOrder(event){
 
     localStorage.removeItem("cart");
 
-    cart = [];
+cart = [];
+
+displayCart();
+
+updateCartCount();
 
 }
 

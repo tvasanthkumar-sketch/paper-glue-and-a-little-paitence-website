@@ -365,6 +365,16 @@ orderText +=
 
 orderText +=
 "Order Method: " + method + "%0A%0A";
+let flowersBox = document.getElementById("flowers");
+let priceBox = document.getElementById("price");
+
+if(flowersBox){
+    flowersBox.value = cart.map(item => item.name).join(", ");
+}
+
+if(priceBox){
+    priceBox.value = "$" + total;
+}
    
 "%0ATotal: $" + total;
 
@@ -468,16 +478,7 @@ addToCart(bouquetName,price);
 }
 
 
-let flowersBox = document.getElementById("flowers");
-let priceBox = document.getElementById("price");
 
-if(flowersBox){
-    flowersBox.value = cart.map(item => item.name).join(", ");
-}
-
-if(priceBox){
-    priceBox.value = "$" + total;
-}
 // Load cart when page opens
 
 window.onload = function(){

@@ -290,9 +290,6 @@ function sendOrder(event){
     event.preventDefault();
 
     let flowersBox = document.getElementById("flowers");
-    flowersBox.value = cart.map(item => 
-    item.quantity + "x " + item.name
-).join(", ");
     let priceBox = document.getElementById("price");
     let colourBox = document.getElementById("colour");
 
@@ -301,6 +298,13 @@ function sendOrder(event){
     cart.forEach(function(item){
         total += item.price * item.quantity;
     });
+
+
+    if(flowersBox){
+        flowersBox.value = cart.map(item =>
+            item.quantity + "x " + item.name
+        ).join(", ");
+    }
 
 
     if(priceBox){
@@ -312,9 +316,10 @@ function sendOrder(event){
         colourBox.value = cart.map(item => item.colour || "").join(", ");
     }
 
-   }
 
+    event.target.submit();
 
+}
 
 function addCustomBouquet() {
 

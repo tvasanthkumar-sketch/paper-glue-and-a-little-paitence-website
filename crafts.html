@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crafts | Paper, Glue & A Little Patience</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+<nav>
+
+
+<div class="logo">
+
+Paper, Glue &<br>
+A Little Patience
+
+</div>
+
+
+
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="flowers.html">Flowers</a></li>
+
+<li><a href="cards.html">Cards</a></li>
+
+<li><a href="crafts.html">Crafts</a></li>
+
+<li>
+<a href="cart.html" class="cart-icon">
+
+🛒
+
+<span id="cart-count">0</span>
+
+</a>
+</li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+
+<section class="page-intro">
+
+
+<h1>
+
+🎨 Crafts & Drawings
+
+</h1>
+
+
+<p>
+
+Unique handmade crafts, origami and artwork
+created with creativity and patience.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="products-section">
+
+
+<h2 class="section-title">
+
+✨ Handmade Crafts
+
+</h2>
+
+
+
+
+
+<div class="product-grid">
+
+
+
+
+
+
+
+<!-- ORIGAMI -->
+
+
+<div class="product-card">
+
+
+<img src="images/origami.jpg" alt="Origami">
+
+
+<h3>
+
+Handmade Origami
+
+</h3>
+
+
+<p>
+
+Carefully folded paper creations made in different designs.
+
+</p>
+
+
+<p class="price">
+
+From $3
+
+</p>
+
+
+
+<label>
+
+Choose Design:
+
+</label>
+
+
+<select>
+
+
+<option>
+Animals
+</option>
+
+
+<option>
+Flowers
+</option>
+
+
+<option>
+Decorations
+</option>
+
+
+<option>
+Custom
+</option>
+
+
+</select>
+
+
+
+
+<button class="button" onclick="addToCart('Origami',10)">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- MINI FIDGETS -->
+
+
+<div class="product-card">
+
+
+<img src="images/fidget.jpg" alt="Mini Fidget">
+
+
+<h3>
+
+Mini Paper Fidgets
+
+</h3>
+
+
+<p>
+
+Small handmade fidgets made for fun and decoration.
+
+</p>
+
+
+<p class="price">
+
+From $3
+
+</p>
+
+
+
+<label>
+
+Choose Style:
+
+</label>
+
+
+<select>
+
+
+<option>
+Simple
+</option>
+
+
+<option>
+Colourful
+</option>
+
+
+<option>
+Custom
+
+</option>
+
+
+</select>
+
+
+
+
+<button class="button" onclick="addToCart('Small Fidgets',3)">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- BOOKMARKS -->
+
+
+<div class="product-card">
+
+
+<img src="images/bookmark.jpg" alt="Bookmark">
+
+
+<h3>
+
+Handmade Bookmarks
+
+</h3>
+
+
+<p>
+
+Creative bookmarks perfect for book lovers.
+
+</p>
+
+
+<p class="price">
+
+$3
+
+</p>
+
+
+
+<label>
+
+Theme:
+
+</label>
+
+
+<select>
+
+
+<option>
+Floral
+</option>
+
+
+<option>
+Fantasy
+</option>
+
+
+<option>
+Minimal
+</option>
+
+
+<option>
+Custom
+</option>
+
+
+</select>
+
+
+
+
+<button class="button" onclick="addToCart('Book Marks',3)">
+
+Add to Cart
+
+</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- DRAWINGS -->
+
+
+<div class="product-card">
+
+
+<img src="images/drawing.jpg" alt="Drawing">
+
+
+<h3>
+
+Artwork & Drawings
+
+</h3>
+
+
+<p>
+
+Original drawings made with detail and creativity.
+
+</p>
+
+
+<p class="price">
+
+$6
+
+</p>
+
+
+
+
+<label>
+
+Style:
+
+</label>
+
+
+<select>
+
+
+<option>
+Portrait
+</option>
+
+
+<option>
+Nature
+</option>
+
+
+<option>
+Fantasy
+</option>
+
+
+<option>
+Custom
+</option>
+
+
+</select>
+
+
+
+
+
+<button class="button" onclick="addToCart('Art work',6)">
+
+Add to Cart
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>dd your changes to crafts.html
+
+
+
+
+
+
+<section class="custom-bouquet">
+
+
+<h2 class="section-title">
+
+✏️ Custom Artwork
+
+</h2>
+
+
+
+
+
+<div class="custom-box">
+
+
+<h3>
+
+Create a drawing made just for you 🎨
+
+</h3>
+
+
+
+<p>
+
+Send an idea, picture or theme and a custom drawing
+will be created especially for you.
+
+</p>
+
+
+
+
+
+
+<h4>
+
+Drawing Style:
+
+</h4>
+
+
+<label>
+
+<input type="radio" name="drawing">
+
+Portrait ($8)
+
+</label>
+
+
+
+<label>
+
+<input type="radio" name="drawing">
+
+Nature / Scenery ($8)
+
+</label>
+
+
+
+<label>
+
+<input type="radio" name="drawing">
+
+Fantasy / Character ($8)
+
+</label>
+
+
+
+
+
+
+
+<h4>
+
+Colour Style:
+
+</h4>
+
+
+<select>
+
+
+<option>
+
+Black & White
+
+</option>
+
+
+<option>
+
+Soft Colours
+
+</option>
+
+
+<option>
+
+Full Colour
+
+</option>
+
+
+<option>
+
+Watercolour Style
+
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<h4>
+
+Upload Reference Image:
+
+</h4>
+
+
+<input type="file">
+
+
+
+
+
+
+<h4>
+
+Describe Your Idea:
+
+</h4>
+
+
+<textarea placeholder="Tell me what you would like drawn..."></textarea>
+
+
+
+
+
+
+
+<button class="button" onclick="addToCart('Custom Drawing',10)">
+
+Add Custom Drawing 
+
+</button>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="about">
+
+
+<h2>
+
+Small Details, Big Creativity
+
+</h2>
+
+
+<p>
+
+From folded paper creations to personalised artwork, every craft is made carefully and designed to bring a little creativity into everyday life.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+© 2026 Paper, Glue & A Little Patience
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

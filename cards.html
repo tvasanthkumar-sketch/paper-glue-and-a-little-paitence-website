@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cards | Paper, Glue & A Little Patience</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+Paper, Glue &<br>
+A Little Patience
+
+</div>
+
+
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="flowers.html">Flowers</a></li>
+
+<li><a href="cards.html">Cards</a></li>
+
+<li><a href="crafts.html">Crafts</a></li>
+
+<li>
+<a href="cart.html" class="cart-icon">
+
+🛒
+
+<span id="cart-count">0</span>
+
+</a>
+</li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+<section class="page-intro">
+
+
+<h1>
+
+💌 Handmade Cards
+
+</h1>
+
+
+<p>
+
+Thoughtful handmade cards created for birthdays,
+celebrations and special moments.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="products-section">
+
+
+<h2 class="section-title">
+
+✨ Card Collection
+
+</h2>
+
+
+
+
+<div class="product-grid">
+
+
+
+
+
+
+
+
+<!-- STANDARD CARD -->
+
+
+<div class="product-card">
+
+
+<img src="images/card-basic.jpg" alt="Handmade Card">
+
+
+<h3>
+
+Simple Handmade Card
+
+</h3>
+
+
+<p>
+
+A beautiful handmade card with paper details,
+perfect for any occasion.
+
+</p>
+
+
+<p class="price">
+
+$3
+
+</p>
+
+
+<label>
+
+Occasion:
+
+</label>
+
+
+<select>
+
+<option>
+Birthday
+</option>
+
+<option>
+Thank You
+</option>
+
+<option>
+Congratulations
+</option>
+
+<option>
+Just Because
+</option>
+
+</select>
+
+
+
+<button class="button" onclick="addToCart('Standard Card',3)">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- SPECIAL CARD -->
+
+
+<div class="product-card">
+
+
+<img src="images/card-special.jpg" alt="Special Handmade Card">
+
+
+<h3>
+
+Special Design Card
+
+</h3>
+
+
+<p>
+
+A more detailed handmade card with extra decorations
+and unique designs.
+
+</p>
+
+
+<p class="price">
+
+$5
+
+</p>
+
+
+
+<label>
+
+Occasion:
+
+</label>
+
+
+<select>
+
+<option>
+Birthday
+</option>
+
+<option>
+Anniversary
+</option>
+
+<option>
+Celebration
+</option>
+
+<option>
+Custom
+</option>
+
+</select>
+
+
+
+
+<button class="button" onclick="addToCart('Special Bouquet',5)">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- CUSTOM CARD -->
+
+
+<div class="product-card">
+
+
+<img src="images/card-custom.jpg" alt="Custom Card">
+
+
+<h3>
+
+Custom Card
+
+</h3>
+
+
+<p>
+
+A card designed especially for your idea,
+with your chosen colours and theme.
+
+</p>
+
+
+<p class="price">
+
+From $6
+
+</p>
+
+
+
+<label>
+
+Theme:
+
+</label>
+
+
+<select>
+
+<option>
+Floral
+</option>
+
+<option>
+Cute
+</option>
+
+<option>
+Elegant
+</option>
+
+<option>
+Custom Idea
+</option>
+
+</select>
+
+
+
+
+<button class="button" onclick="addToCart('Custom Card',6)">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>Add your changes to cards.html
+  
+
+
+
+
+
+<section class="custom-bouquet">
+
+
+<h2 class="section-title">
+
+✨ Create Your Own Card
+
+</h2>
+
+
+
+
+<div class="custom-box">
+
+
+<h3>
+
+Design a card made just for you 💌
+
+</h3>
+
+
+
+<p>
+
+Choose the style, colours and occasion.
+Add any special details you would like included.
+
+</p>
+
+
+
+
+
+<h4>
+
+Card Type:
+
+</h4>
+
+
+<label>
+
+<input type="radio" name="card-type">
+
+Standard Card ($3)
+
+</label>
+
+
+<label>
+
+<input type="radio" name="card-type">
+
+Special Design Card ($5)
+
+</label>
+
+
+<label>
+
+<input type="radio" name="card-type">
+
+Custom Card ($5+)
+
+</label>
+
+
+
+
+
+
+
+<h4>
+
+Occasion:
+
+</h4>
+
+
+<select>
+
+
+<option>
+Birthday
+</option>
+
+
+<option>
+Thank You
+</option>
+
+
+<option>
+Congratulations
+</option>
+
+
+<option>
+Teacher Gift
+</option>
+
+
+<option>
+Other
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<h4>
+
+Colour Theme:
+
+</h4>
+
+
+<select>
+
+
+<option>
+Soft Pastel
+</option>
+
+
+<option>
+Dark & Elegant
+</option>
+
+
+<option>
+Bright Colours
+</option>
+
+
+<option>
+Floral Theme
+</option>
+
+
+<option>
+Custom Colours
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<h4>
+
+Special Details:
+
+</h4>
+
+
+<textarea placeholder="Tell me what you would like on your card..."></textarea>
+
+
+
+
+
+
+<h4>
+
+Upload Inspiration Image:
+
+</h4>
+
+
+<input type="file">
+
+
+
+
+
+
+<button class="button" onclick="addToCart('Create your own Card Card',8)">
+
+Place Card Request 
+  
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="about">
+
+
+<h2>
+
+Made For Special Moments
+
+</h2>
+
+
+<p>
+
+Every card is handmade with care and designed to make someone feel appreciated. Whether it is a birthday, thank you message or a special surprise, each card is created to be meaningful.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+© 2026 Paper, Glue & A Little Patience
+
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

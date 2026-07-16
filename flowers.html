@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flowers | Paper, Glue & A Little Patience</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+Paper, Glue &<br>
+A Little Patience
+
+</div>
+
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="flowers.html">Flowers</a></li>
+
+<li><a href="cards.html">Cards</a></li>
+
+<li><a href="crafts.html">Crafts</a></li>
+
+<li>
+<a href="cart.html" class="cart-icon">
+
+🛒
+
+<span id="cart-count">0</span>
+
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+
+
+<section class="page-intro">
+
+
+<h1>
+🌹 Handmade Paper Flowers
+</h1>
+
+
+<p>
+
+Choose your favourite flower, colour and style.
+Every flower is handmade from book pages or painted by hand.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="products-section">
+
+
+<h2 class="section-title">
+
+🌷 Individual Flowers
+
+</h2>
+
+
+
+
+<div class="product-grid">
+  <!-- ROSE -->
+
+<div class="product-card">
+
+<img src="images/rose.jpg" alt="Paper Rose">
+
+<h3>Rose</h3>
+
+<p>
+A handmade rose created from recycled book pages.
+</p>
+
+<p class="price">
+$3 - $4
+</p>
+
+
+<label>
+Made out of:
+</label>
+
+<select class="product-option">
+    <option value="3|Book Pages">Book Pages ($3)</option>
+    <option value="4|White Painted Paper">White Painted Paper ($4)</option>
+    <option value="4|Red Painted Paper">Red Painted Paper ($4)</option>
+    <option value="4|Pink Painted Paper">Pink Painted Paper ($4)</option>
+    <option value="4|Blue Painted Paper">Blue Painted Paper ($4)</option>
+    <option value="4|Purple Painted Paper">Purple Painted Paper ($4)</option>
+</select>
+
+
+<label>
+Quantity:
+</label>
+
+<input class="quantity" type="number" value="1" min="1">
+
+
+<button class="button" onclick="addProductToCart(this,'Rose')">
+Add to Cart
+</button>
+
+</div>
+
+
+
+
+
+
+<!-- HYDRANGEA -->
+
+<div class="product-card">
+
+<img src="images/hydrangea.jpg" alt="Paper Hydrangea">
+
+<h3>Hydrangea</h3>
+
+<p>
+A handmade hydrangea crafted from tissue paper.
+</p>
+
+<p class="price">
+$4
+</p>
+
+
+<label>
+Made out of:
+</label>
+
+<select class="product-option">
+
+<option value="4|Purple/Blue Tissue">
+Purple/Blue Tissue ($4)
+</option>
+
+<option value="4|Pink Tissue">
+Pink Tissue ($4)
+</option>
+
+<option value="4|White Tissue">
+White Tissue ($4)
+</option>
+
+</select>
+
+
+<label>
+Quantity:
+</label>
+
+<input class="quantity" type="number" value="1" min="1">
+
+
+<button class="button" onclick="addProductToCart(this,'Hydrangea')">
+Add to Cart
+</button>
+
+</div>
+
+<!-- LAVENDER -->
+
+<div class="product-card">
+
+<img src="images/lavender.jpg" alt="Paper Lavender">
+
+<h3>Lavender</h3>
+
+<p>
+A delicate lavender stem made with handmade paper petals.
+</p>
+
+<p class="price">
+$4 - $5
+</p>
+
+
+<label>
+Made out of:
+</label>
+
+
+<select class="product-option">
+
+<option value="4|Book Paper">
+Book Paper ($4)
+</option>
+
+<option value="5|Pink Painted Paper">
+Pink Painted Paper ($5)
+</option>
+
+<option value="5|White Painted Paper">
+White Painted Paper ($5)
+</option>
+
+<option value="5|Blue Painted Paper">
+Blue Painted Paper ($5)
+</option>
+
+<option value="5|Purple Painted Paper">
+Purple Painted Paper ($5)
+</option>
+
+</select>
+
+
+<label>
+Quantity:
+</label>
+
+<input class="quantity" type="number" value="1" min="1">
+
+
+<button class="button" onclick="addProductToCart(this,'Lavender')">
+Add to Cart
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- SUNFLOWER -->
+
+<div class="product-card">
+
+<img src="images/sunflower.jpg" alt="Paper Sunflower">
+
+<h3>Sunflower</h3>
+
+<p>
+A vivid sunflower with carefully crafted petals.
+</p>
+
+<p class="price">
+$4
+</p>
+
+
+<label>
+Made out of:
+</label>
+
+
+<select class="product-option">
+
+<option value="4|Yellow Painted Paper">
+Yellow Painted Paper ($4)
+</option>
+
+<option value="4|Orange Painted Paper">
+Orange Painted Paper ($4)
+</option>
+
+<option value="4|Cream Painted Paper">
+Cream Painted Paper ($4)
+</option>
+
+</select>
+
+
+<label>
+Quantity:
+</label>
+
+<input class="quantity" type="number" value="1" min="1">
+
+
+<button class="button" onclick="addProductToCart(this,'Sunflower')">
+Add to Cart
+</button>
+
+
+</div>
+
+
+
+
+<!-- Lily  -->
+
+<div class="product-card">
+
+<img src="images/lily.jpg" alt="Paper Lily">
+
+<h3>Lily</h3>
+
+<p>
+A elegant lily with simple but delicate petals
+</p>
+
+<p class="price">
+$4
+</p>
+
+
+<label>
+Made out of:
+</label>
+
+
+<select class="product-option">
+
+<option value="4|Yellow Painted Paper">
+Yellow Painted Paper ($4)
+</option>
+
+<option value="4|Pink Painted Paper">
+Pink Painted Paper ($4)
+</option>
+
+<option value="4|Purple Painted Paper">
+Purple Painted Paper ($4)
+</option>
+
+ <option value="4|Orange Painted Paper">
+Orange Painted Paper ($4)
+</option> 
+
+</select>
+
+
+<label>
+Quantity:
+</label>
+
+<input class="quantity" type="number" value="1" min="1">
+
+
+<button class="button" onclick="addProductToCart(this,'Lily')">
+Add to Cart
+</button>
+
+
+</div>
+
+<!-- Lotus -->
+
+<div class="product-card">
+
+<img src="images/lotus.jpg" alt="Paper Lotus">
+
+<h3>Lotus</h3>
+
+<p>
+A stunning lotus with vibrant colours
+</p>
+
+<p class="price">
+$4
+</p>
+
+
+<label>
+Made out of:
+</label>
+
+
+<select class="product-option">
+
+<option value="4|Pink Painted Paper">
+Pink Painted Paper ($4)
+</option>
+
+<option value="4|Yello Painted Paper">
+Yellow Painted Paper ($4)
+</option>
+
+<option value="4|Red Painted Paper">
+Red Painted Paper ($4)
+</option>
+
+ <option value="4|Orange Painted Paper">
+Orange Painted Paper ($4)
+</option> 
+
+</select>
+
+
+<label>
+Quantity:
+</label>
+
+<input class="quantity" type="number" value="1" min="1">
+
+
+<button class="button" onclick="addProductToCart(this,'Lotus')">
+Add to Cart
+</button>
+
+
+</div>
+
+
+<!-- POPPY -->
+
+<div class="product-card">
+
+<img src="images/poppy.jpg" alt="Paper Poppy">
+
+<h3>Poppy</h3>
+
+<p>
+A handmade poppy inspired by real flowers.
+</p>
+
+
+<p class="price">
+$3
+</p>
+
+
+<label>
+Made out of:
+</label>
+
+
+<select class="product-option">
+
+<option value="3|Red Painted Paper">
+Red Painted Paper ($3)
+</option>
+
+<option value="3|Orange Painted Paper">
+Orange Painted Paper ($3)
+</option>
+
+<option value="3|White Painted Paper">
+White Painted Paper ($3)
+</option>
+
+<option value="3|Cream Painted Paper">
+Cream Painted Paper ($3)
+</option>
+
+<option value="3|Purple Painted Paper">
+Purple Painted Paper ($3)
+</option>
+
+</select>
+
+
+<label>
+Quantity:
+</label>
+
+<input class="quantity" type="number" value="1" min="1">
+
+
+<button class="button" onclick="addProductToCart(this,'Poppy')">
+Add to Cart
+</button>
+
+</div>
+
+ <!-- Cherry Blossom -->
+
+<div class="product-card">
+
+<img src="images/cherry blossom.jpg" alt="Paper Cherry Blossom">
+
+<h3>Cherry Blossom</h3>
+
+<p>
+A delicate cherry blossom inspired by traditional japansese flowers.
+</p>
+
+
+<p class="price">
+$3
+</p>
+
+
+<label>
+Made out of:
+</label>
+
+
+<select class="product-option">
+
+
+<option value="3|White tissue">
+White tissue ($3)
+</option>
+
+<option value="3|Pink dyed tissue">
+Pink dyed tissue ($3)
+</option>
+
+</select>
+
+
+<label>
+Quantity:
+</label>
+
+<input class="quantity" type="number" value="1" min="1">
+
+
+<button class="button" onclick="addProductToCart(this,'Cherry Blossom')">
+Add to Cart
+</button>
+
+
+
+</div> <!-- CLOSES INDIVIDUAL FLOWERS GRID -->
+
+<section class="products-section">
+
+<h2 class="section-title">
+💐 Handmade Bouquets
+</h2>
+
+<div class="product-grid">
+
+
+
+<!-- ROSE BOUQUET -->
+
+<div class="product-card">
+
+
+<img src="images/rose-bouquet.jpg" alt="Rose Bouquet">
+
+
+<h3>
+Book Rose Bouquet
+</h3>
+
+
+<p>
+
+A bouquet of 5 handmade paper roses.
+
+</p>
+
+
+<p class="price">
+
+$20
+
+</p>
+
+
+<label>
+Colour Theme:
+</label>
+
+
+<select>
+
+<option>
+Classic Red
+</option>
+
+<option>
+Soft Pink
+</option>
+
+<option>
+Pastel
+</option>
+
+<option>
+Custom
+</option>
+
+</select>
+
+
+
+<button class="button" onclick="addToCart('Rose Bouquet',20)">
+
+Add Bouquet
+
+</button>
+
+</div>
+
+
+
+
+
+
+
+<!-- HYDRANGEA BOUQUET -->
+
+
+<div class="product-card">
+
+
+<img src="images/hydrangea-bouquet.jpg" alt="Hydrangea Bouquet">
+
+
+<h3>
+Hydrangea Bouquet
+</h3>
+
+
+<p>
+
+A fluffy bouquet made with 5 handmade hydrangea flowers.
+
+</p>
+
+
+<p class="price">
+
+$24
+
+</p>
+
+
+<label>
+Colour Theme:
+</label>
+
+
+<select>
+
+<option>
+Baby Blue
+</option>
+
+<option>
+Lavender
+</option>
+
+<option>
+Pink
+</option>
+
+<option>
+White
+</option>
+
+</select>
+
+
+
+<button class="button" onclick="addToCart('Hydrangea Bouquet',24)">
+
+Add Bouquet
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- LILY BOUQUET -->
+
+
+<div class="product-card">
+
+
+<img src="images/lily-bouquet.jpg" alt="Lily Bouquet">
+
+
+<h3>
+Lily Bouquet
+</h3>
+
+
+<p>
+
+A delicate bouquet containing 5 handmade lilies.
+
+</p>
+
+
+<p class="price">
+
+$15
+
+</p>
+
+
+<label>
+Colour Theme:
+</label>
+
+
+<select>
+
+<option>
+White
+</option>
+
+<option>
+Pink
+</option>
+
+<option>
+Mixed
+</option>
+
+</select>
+
+
+
+<button class="button" onclick="addToCart('Lilly Bouquet',15)">
+
+Add Bouquet
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- TULIP BOUQUET -->
+
+
+<div class="product-card">
+
+
+<img src="images/tulip-bouquet.jpg" alt="Tulip Bouquet">
+
+
+<h3>
+Tulip Bouquet
+</h3>
+
+
+<p>
+
+A cheerful bouquet of 5 paper tulips.
+
+</p>
+
+
+<p class="price">
+
+$15
+
+</p>
+
+
+<label>
+Colour Theme:
+</label>
+
+
+<select>
+
+<option>
+Spring Colours
+</option>
+
+<option>
+Pink & White
+</option>
+
+<option>
+Rainbow
+</option>
+
+</select>
+
+
+
+<button class="button" onclick="addToCart('Tulip Bouquet',15)">
+
+Add Bouquet
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- LAVENDER BOUQUET -->
+
+
+<div class="product-card">
+
+
+<img src="images/lavender-bouquet.jpg" alt="Lavender Bouquet">
+
+
+<h3>
+Lavender Bouquet
+</h3>
+
+
+<p>
+
+A calming bouquet inspired by lavender fields.
+
+</p>
+
+
+<p class="price">
+
+$20
+
+</p>
+
+
+<label>
+Colour Theme:
+</label>
+
+
+<select>
+
+<option>
+Purple
+</option>
+
+<option>
+Lavender
+</option>
+
+<option>
+White
+</option>
+
+</select>
+
+
+
+<button class="button" onclick="addToCart('Lavender Bouquet',20)">
+
+Add Bouquet
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- SUNFLOWER BOUQUET -->
+
+
+<div class="product-card">
+
+
+<img src="images/sunflower-bouquet.jpg" alt="Sunflower Bouquet">
+
+
+<h3>
+Sunflower Bouquet
+</h3>
+
+
+<p>
+
+Bright handmade sunflowers arranged together.
+
+</p>
+
+
+<p class="price">
+
+$20
+
+</p>
+
+
+<label>
+Colour Theme:
+</label>
+
+
+<select>
+
+<option>
+Sunny Yellow
+</option>
+
+<option>
+Autumn
+</option>
+
+<option>
+Mixed
+</option>
+
+</select>
+
+
+
+<button class="button" onclick="addToCart('Sunflower Bouquet',20)">
+
+Add Bouquet
+
+</button>
+
+</div>
+
+
+
+
+
+
+
+<!-- POPPY BOUQUET -->
+
+
+<div class="product-card">
+
+
+<img src="images/poppy-bouquet.jpg" alt="Poppy Bouquet">
+
+
+<h3>
+Poppy Bouquet
+</h3>
+
+
+<p>
+
+A small bouquet of handmade paper poppies.
+
+</p>
+
+
+<p class="price">
+
+$15
+
+</p>
+
+
+<label>
+Colour Theme:
+</label>
+
+
+<select>
+
+<option>
+Red
+</option>
+
+<option>
+Pink
+</option>
+
+<option>
+Mixed
+</option>
+
+</select>
+
+
+
+<button class="button" onclick="addToCart('Poppy Bouquet',15)">
+
+Add Bouquet
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+<section class="custom-bouquet">
+
+
+<h2 class="section-title">
+
+✨ Create Your Own Bouquet
+
+</h2>
+
+
+
+<div class="custom-box">
+
+
+<h3>
+
+Design your dream bouquet 💐
+
+</h3>
+
+
+
+<p>
+
+Choose your flowers, colours and style.
+Your final price will be confirmed when your order is placed.
+
+</p>
+
+
+
+
+<h4>
+Choose Flowers:
+</h4>
+
+
+
+<label>
+<input type="checkbox" id="rose">
+🌹 Roses
+</label>
+
+<label>
+<input type="checkbox" id="hydrangea">
+🌸 Hydrangeas
+</label>
+
+<label>
+<input type="checkbox" id="lily">
+🌷 Lilies
+</label>
+
+<label>
+<input type="checkbox" id="tulip">
+🌷 Tulips
+</label>
+
+<label>
+<input type="checkbox" id="lavender">
+💜 Lavender
+</label>
+
+<label>
+<input type="checkbox" id="sunflower">
+🌻 Sunflowers
+</label>
+
+<label>
+<input type="checkbox" id="poppy">
+🌺 Poppies
+</label>
+
+
+
+
+
+<h4>
+Number of Flowers:
+</h4>
+
+
+<select id="flower-count">
+
+<option value="35">
+10 flowers - $40
+</option>
+
+<option value="50">
+15 flowers - $55
+</option>
+
+<option value="65">
+20 flowers - $65
+</option>
+
+</select>
+
+
+
+
+
+<h4>
+Colour Theme:
+</h4>
+
+
+<select id="colour-theme">
+
+<option>
+🌸 Soft Pastel
+</option>
+
+
+<option>
+🍷 Dark & Elegant
+</option>
+
+
+<option>
+🌈 Bright Colours
+</option>
+
+
+<option>
+🤍 Neutral & Cream
+</option>
+
+
+<option>
+Custom Colours
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<h4>
+Flower Style:
+</h4>
+
+
+
+<label>
+
+<input type="radio" name="style" value="Book Paper">
+ 
+Book Paper (+$0)
+
+</label>
+
+
+
+<label>
+
+<input type="radio" name="style" value="Watercoloured">
+ 
+Watercoloured (+$1 per flower)
+
+</label>
+
+
+
+
+
+
+
+<h4>
+Extra Notes:
+</h4>
+
+
+<textarea placeholder="Tell us any special requests..."></textarea>
+
+
+
+
+
+<button class="button" onclick="addCustomBouquet()">
+
+Add Bouquet
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+<p>
+
+© 2026 Paper, Glue & A Little Patience
+
+</p>
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

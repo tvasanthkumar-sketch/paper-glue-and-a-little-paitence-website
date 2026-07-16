@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cart | Paper, Glue & A Little Patience</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+<nav>
+
+
+<div class="logo">
+
+Paper, Glue &<br>
+A Little Patience
+
+</div>
+
+
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="flowers.html">Flowers</a></li>
+
+<li><a href="cards.html">Cards</a></li>
+
+<li><a href="crafts.html">Crafts</a></li>
+
+<li>
+<a href="cart.html" class="cart-icon">
+
+🛒
+
+<span id="cart-count">0</span>
+
+</a>
+</li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+
+<section class="page-intro">
+
+
+<h1>
+
+🛒 Your Order
+
+</h1>
+
+
+<p>
+
+Review your handmade creations before sending your order request.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="custom-box cart-box">
+
+
+<h2>
+
+Your Items
+
+</h2>
+
+
+
+<div id="cart-items">
+
+
+<p>
+
+Your cart is currently empty.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<h2>
+
+Total:
+
+<span id="cart-total">
+
+$0
+
+</span>
+
+</h2>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<form action="https://formspree.io/f/mkodovwq" method="POST" class="custom-box">
+  <input type="hidden" name="_subject" value="New Handmade Bouquet Order 🌸">
+
+
+<h2>
+
+📩 Place Your Order
+
+</h2>
+
+
+
+
+<label>
+
+Name:
+
+</label>
+
+
+<input 
+type="text" 
+id="customer-name"
+name="Customer Name"
+placeholder="Your name">
+required>
+
+
+
+
+<label>
+
+Email:
+
+</label>
+
+
+<input 
+type="email"
+id="customer-email"
+name="Email"
+placeholder="Your email">
+required>
+  
+<label>
+Phone:
+</label>
+
+<input 
+type="text"
+id="customer-phone"
+name="Phone"
+placeholder="Your phone">
+required>
+
+<label>
+Order Method:
+</label>
+
+<select id="order-method" name="Delivery or Pickup"> required>
+
+<option>
+Pickup
+</option>
+
+<option>
+Delivery
+</option>
+
+</select>
+
+
+
+<label>
+
+Order Notes:
+
+</label>
+
+
+<textarea 
+id="order-notes"
+name="Order Notes"
+placeholder="Any special requests..."></textarea>
+
+
+
+
+
+
+<button class="button" type="submit">
+
+Send Order Request
+
+</button>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+<footer>
+
+<p>
+
+© 2026 Paper, Glue & A Little Patience
+
+</p>
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

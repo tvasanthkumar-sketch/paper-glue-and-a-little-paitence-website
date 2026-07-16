@@ -1,0 +1,943 @@
+/* =========================
+   IMPORT FONTS
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+
+
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    background:#F7EFE3;
+    color:#4A2B2B;
+
+    font-family:'Cormorant Garamond', serif;
+
+    overflow-x:hidden;
+
+}
+
+
+
+h1,h2,h3{
+
+    font-family:'Special Elite', cursive;
+
+    color:#641F2B;
+
+}
+
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+
+header{
+
+    background:#641F2B;
+
+    color:#F7EFE3;
+
+    padding:20px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.logo{
+
+    font-family:'Special Elite', cursive;
+
+    font-size:28px;
+
+    line-height:1.2;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+
+
+nav li{
+
+    color:#F7EFE3;
+
+    transition:0.3s;
+
+}
+
+
+
+nav li:hover{
+
+    color:#D8B17A;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+/* =========================
+   HERO
+========================= */
+
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+
+
+.hero-text h1{
+
+    font-size:70px;
+
+    letter-spacing:2px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.hero-text p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:24px;
+
+    line-height:1.6;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+
+.button{
+
+    background:#641F2B;
+
+    color:#F7EFE3;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    display:inline-block;
+
+    transition:0.3s;
+
+}
+
+
+
+.button:hover{
+
+    background:#8B3445;
+
+    transform:translateY(-5px);
+
+}
+
+.remove-button{
+
+    background:#641F2B;
+
+    color:#F7EFE3;
+
+    border:none;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+}
+/* ==========================
+   FEATURED COLLECTIONS
+========================== */
+
+
+#featured,
+#offers,
+#perfect-for,
+#collections{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:80px 0;
+
+}
+
+
+
+
+
+/* ==========================
+   ALTERNATING PHOTO SECTIONS
+========================== */
+
+
+.collection{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+
+    margin-bottom:100px;
+
+}
+
+
+
+.collection.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+
+
+
+
+.collection-image{
+
+    flex:1;
+
+    position:relative;
+
+}
+
+
+
+
+
+.collection-image img{
+
+    width:100%;
+
+    max-width:450px;
+
+    background:white;
+
+    padding:18px 18px 45px 18px;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.2);
+
+    transform:rotate(-3deg);
+
+    transition:.4s;
+
+}
+
+
+
+
+
+.collection:nth-child(even) img{
+
+    transform:rotate(3deg);
+
+}
+
+
+
+
+
+.collection-image img:hover{
+
+    transform:
+
+    rotate(0deg)
+
+    translateY(-10px)
+
+    scale(1.03);
+
+}
+
+
+
+
+
+/* ==========================
+   PHOTO TAPE
+========================== */
+
+
+.collection-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100px;
+
+    height:30px;
+
+    background:#e7d6a5;
+
+    top:-10px;
+
+    left:35%;
+
+    transform:rotate(-8deg);
+
+    z-index:2;
+
+    opacity:.8;
+
+}
+
+
+
+
+
+/* ==========================
+   TEXT SIDE
+========================== */
+
+
+.collection-text{
+
+    flex:1;
+
+}
+
+
+
+.collection-text h2{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.collection-text p{
+
+    font-size:20px;
+
+    margin-bottom:20px;
+
+    line-height:1.7;
+
+}
+
+
+
+.price{
+
+    font-size:28px;
+
+    color:#641F2B;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* ==========================
+   OFFER BOX
+========================== */
+
+
+.offer-box{
+
+    background:#EFE0CC;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+}
+
+
+
+.offer-box h3{
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+/* ==========================
+   PERFECT FOR CARDS
+========================== */
+
+
+.use-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+
+.use-card{
+
+    background:#FFFDF8;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.use-card:hover{
+
+    transform:translateY(-8px)
+    rotate(-1deg);
+
+}
+
+
+
+
+
+.use-card h3{
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.use-card p{
+
+    font-size:17px;
+
+}
+
+
+
+
+
+/* ==========================
+   CATEGORY BUTTONS
+========================== */
+
+
+.collection-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+
+
+.collection-links a{
+
+    background:#641F2B;
+
+    color:#F7EFE3;
+
+    padding:20px 40px;
+
+    border-radius:40px;
+
+    font-size:20px;
+
+    transition:.3s;
+
+}
+
+
+
+.collection-links a:hover{
+
+    background:#8B3445;
+
+    transform:translateY(-5px);
+
+}
+/* ==========================
+   PAGE INTRO
+========================== */
+
+.page-intro{
+
+    text-align:center;
+
+    padding:80px 10% 40px;
+
+}
+
+
+.page-intro h1{
+
+    font-size:55px;
+
+    margin-bottom:25px;
+
+}
+
+
+.page-intro p{
+
+    font-size:22px;
+
+    max-width:750px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+/* ==========================
+   PRODUCTS SECTION
+========================== */
+
+
+.products-section{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:60px 0;
+
+}
+
+
+
+
+
+.product-grid {
+    display:flex;
+    flex-wrap:wrap;
+    gap:45px;
+}
+
+
+.product-card {
+    flex:1 1 280px;
+}
+
+
+
+
+/* ==========================
+   PRODUCT CARD
+========================== */
+
+
+.product-card{
+
+    background:#FFFDF8;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+
+
+
+
+.product-card:hover{
+
+    transform:
+
+    translateY(-10px)
+    rotate(-1deg);
+
+    box-shadow:
+
+    0 18px 35px rgba(0,0,0,.18);
+
+}
+
+
+
+
+
+.product-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    padding:12px;
+
+    background:white;
+
+    box-shadow:
+
+    0 5px 15px rgba(0,0,0,.15);
+
+}
+
+
+
+
+
+.product-card h3{
+
+    font-size:30px;
+
+    margin:20px 0 10px;
+
+}
+
+
+
+
+
+.product-card p{
+
+    font-size:18px;
+
+}
+
+
+
+
+
+.product-card .price{
+
+    font-size:26px;
+
+    color:#641F2B;
+
+    font-weight:bold;
+
+    margin:15px 0;
+
+}
+
+
+
+
+
+/* ==========================
+   SELECT + INPUTS
+========================== */
+
+
+.product-card select,
+.product-card input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:8px 0 15px;
+
+    border-radius:10px;
+
+    border:1px solid #D8B17A;
+
+    background:#F7EFE3;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:17px;
+
+}
+
+
+
+
+
+.product-card label{
+
+    font-size:18px;
+
+    color:#641F2B;
+
+}
+
+
+
+
+
+/* ==========================
+   CUSTOM BOUQUET
+========================== */
+
+
+.custom-bouquet{
+
+    width:80%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+}
+
+
+
+
+.custom-box{
+
+    background:#EFE0CC;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+
+
+
+.custom-box h3{
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.custom-box h4{
+
+    color:#641F2B;
+
+    font-size:22px;
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+.custom-box label{
+
+    display:block;
+
+    margin:12px 0;
+
+    font-size:19px;
+
+}
+
+
+
+
+
+.custom-box textarea{
+
+    width:100%;
+
+    height:120px;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    border-radius:15px;
+
+    border:none;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:18px;
+
+}   
+/* ==========================
+   CART BADGE
+========================== */
+
+
+.cart-icon{
+
+    position:relative;
+
+    font-size:3-px;
+
+}
+
+
+#cart-count{
+
+    position:absolute;
+
+    top:-12px;
+
+    right:-15px;
+
+    background:#641F2B;
+
+    color:#F7EFE3;
+
+    width:25px;
+
+    height:25px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:14px;
+
+    font-family:'Special Elite', cursive;
+
+}

@@ -150,29 +150,28 @@ Occasion:
 </label>
 
 
-<select>
+<select class="product-option">
 
-<option>
+<option value="3|Birthday">
 Birthday
 </option>
 
-<option>
+<option value="3|Thank You">
 Thank You
 </option>
 
-<option>
+<option value="3|Congratulations">
 Congratulations
 </option>
 
-<option>
+<option value="3|Just Because">
 Just Because
 </option>
 
 </select>
 
 
-
-<button class="button" onclick="addToCart('Standard Card',3)">
+<button class="button" onclick="addProductToCart(this,'Standard Card')">
 
 Add to Cart
 
@@ -228,31 +227,28 @@ Occasion:
 </label>
 
 
-<select>
+<select class="product-option">
 
-<option>
+<option value="5|Birthday">
 Birthday
 </option>
 
-<option>
+<option value="5|Anniversary">
 Anniversary
 </option>
 
-<option>
+<option value="5|Celebration">
 Celebration
 </option>
 
-<option>
+<option value="5|Custom">
 Custom
 </option>
 
 </select>
 
 
-
-
-<button class="button" onclick="addToCart('Special Bouquet',5)">
-
+<button class="button" onclick="addProductToCart(this,'Special Design Card')">
 Add to Cart
 
 </button>
@@ -305,22 +301,22 @@ Theme:
 </label>
 
 
-<select>
+<select class="product-option">
 
-<option>
+<option value="6|Floral">
 Floral
 </option>
 
-<option>
+<option value="6|Minimal">
+Minimal
+</option>
+
+<option value="6|Cute">
 Cute
 </option>
 
-<option>
-Elegant
-</option>
-
-<option>
-Custom Idea
+<option value="6|Custom">
+Custom
 </option>
 
 </select>
@@ -328,8 +324,7 @@ Custom Idea
 
 
 
-<button class="button" onclick="addToCart('Custom Card',6)">
-
+<button class="button" onclick="addProductToCart(this,'Custom Card')">
 Add to Cart
 
 </button>

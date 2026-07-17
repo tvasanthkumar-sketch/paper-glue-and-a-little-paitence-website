@@ -347,6 +347,10 @@ function addCustomBouquet() {
     if(document.getElementById("poppy").checked){
         flowers.push("Poppies");
     }
+
+     if(document.getElementById("cherry blossom").checked){
+        flowers.push("Cherry Blossom");
+    }
     let colour =
     document.getElementById("colour-theme").value;
     

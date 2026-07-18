@@ -680,7 +680,7 @@ nav li:hover{
 
 .product-card{
 
-    background:#FFFDF8;
+    background:#641F2B;
 
     padding:25px;
 
@@ -695,7 +695,23 @@ nav li:hover{
     transition:.35s;
 
 }
+.product-card h3{
 
+    color:#F7EFE3;
+
+}
+
+.product-card p{
+
+    color:#F7EFE3;
+
+}
+
+.product-card .price{
+
+    color:#F7EFE3;
+
+}
 
 
 

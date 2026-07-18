@@ -1089,7 +1089,7 @@ body {
 
 }
 /* =========================
-   ABOUT / WHY HANDMADE
+   ABOUT / WHY HANDMADE BOX
 ========================= */
 
 .about{
@@ -1102,11 +1102,14 @@ body {
 
     margin:80px auto;
 
-    padding:60px;
-
-    border-radius:25px;
+    padding:50px;
 
     text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
 
 }
 
@@ -1114,9 +1117,9 @@ body {
 
     color:#F7EFE3;
 
-    font-size:40px;
+    font-size:35px;
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 
 }
 
@@ -1124,11 +1127,11 @@ body {
 
     color:#F7EFE3;
 
-    font-size:21px;
+    font-size:20px;
 
     line-height:1.7;
 
-    max-width:800px;
+    max-width:750px;
 
     margin:auto;
 

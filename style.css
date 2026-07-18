@@ -1089,10 +1089,10 @@ body {
 
 }
 /* =========================
-   ABOUT / WHY HANDMADE BOX
+   WHY HANDMADE SECTION
 ========================= */
 
-.about{
+#why-handmade{
 
     background:#641F2B;
 
@@ -1113,26 +1113,58 @@ body {
 
 }
 
-.about h2{
+
+#why-handmade .section-title{
 
     color:#F7EFE3;
 
     font-size:35px;
 
-    margin-bottom:20px;
+    margin-bottom:30px;
 
 }
 
-.about p{
 
-    color:#F7EFE3;
+.why-grid{
 
-    font-size:20px;
+    display:grid;
 
-    line-height:1.7;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
 
-    max-width:750px;
+    gap:30px;
 
-    margin:auto;
+}
+
+
+.why-card{
+
+    background:#F7EFE3;
+
+    padding:30px;
+
+    border-radius:15px;
+
+}
+
+
+.why-card h3{
+
+    color:#641F2B;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+.why-card p{
+
+    color:#4A2B2B;
+
+    font-size:18px;
+
+    line-height:1.5;
 
 }

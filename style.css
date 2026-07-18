@@ -445,7 +445,7 @@ nav li:hover{
 
 .offer-box{
 
-    background:#EFE0CC;
+    background:#641F2B;
 
     padding:50px;
 
@@ -468,7 +468,21 @@ nav li:hover{
     margin-bottom:20px;
 
 }
+.offer-box h3{
 
+    color:#F7EFE3;
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+.offer-box p{
+
+    color:#F7EFE3;
+
+}
 
 
 

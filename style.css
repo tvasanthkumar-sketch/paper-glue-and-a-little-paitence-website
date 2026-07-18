@@ -1119,3 +1119,12 @@ body {
 .product-card {
     background: #641F2B !important;
 }
+
+.custom-box h3,
+.custom-box h4,
+.custom-box label,
+.custom-box p{
+
+    color:#F7EFE3;
+
+}

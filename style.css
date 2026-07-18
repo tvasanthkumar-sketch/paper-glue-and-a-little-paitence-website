@@ -510,7 +510,7 @@ nav li:hover{
 
 .use-card{
 
-    background:#FFFDF8;
+    background:#641F2B;
 
     padding:35px;
 
@@ -527,9 +527,6 @@ nav li:hover{
 }
 
 
-
-
-
 .use-card:hover{
 
     transform:translateY(-8px)
@@ -538,10 +535,9 @@ nav li:hover{
 }
 
 
-
-
-
 .use-card h3{
+
+    color:#F7EFE3;
 
     font-size:25px;
 
@@ -550,16 +546,13 @@ nav li:hover{
 }
 
 
-
-
-
 .use-card p{
+
+    color:#F7EFE3;
 
     font-size:17px;
 
 }
-
-
 
 
 

@@ -254,6 +254,14 @@ nav li:hover{
 }
 
 
+/* EXTRA SPACE BELOW SECTION TITLES */
+
+.section-title{
+
+    margin-bottom:80px;
+
+}
+
 
 
 
@@ -897,7 +905,7 @@ nav li:hover{
 
     position:relative;
 
-    font-size:3-px;
+    font-size:30px;
 
 }
 

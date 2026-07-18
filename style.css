@@ -931,3 +931,104 @@ nav li:hover{
     font-family:'Special Elite', cursive;
 
 }
+
+/* =========================
+   MOBILE FRIENDLY DESIGN
+========================= */
+
+@media (max-width: 768px){
+
+    /* NAVIGATION */
+
+    nav{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+
+    /* PAGE CONTENT */
+
+    .page-intro{
+        padding: 40px 20px;
+    }
+
+    .page-intro h1{
+        font-size: 32px;
+    }
+
+    .page-intro p{
+        font-size: 16px;
+    }
+
+
+    /* PRODUCT GRID */
+
+    .product-grid{
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 20px;
+    }
+
+
+    /* PRODUCT CARDS */
+
+    .product-card{
+        width: 100%;
+    }
+
+
+    /* IMAGES */
+
+    .product-card img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+    /* CUSTOM BOXES */
+
+    .custom-box{
+        width: calc(100% - 30px);
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+
+    /* FORMS */
+
+    input,
+    select,
+    textarea{
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* BUTTONS */
+
+    .button{
+        width: 100%;
+        padding: 14px;
+    }
+
+
+    /* CART */
+
+    .cart-box{
+        width: calc(100% - 30px);
+    }
+
+}

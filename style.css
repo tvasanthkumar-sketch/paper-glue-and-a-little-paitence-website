@@ -1088,83 +1088,39 @@ body {
     }
 
 }
-/* =========================
-   WHY HANDMADE SECTION
-========================= */
-
-#why-handmade{
-
-    background:#641F2B;
-
-    width:90%;
-
-    max-width:1200px;
-
-    margin:80px auto;
-
-    padding:50px;
-
-    text-align:center;
-
-    border-radius:20px;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.12);
-
+#why-handmade {
+    background: #641F2B;
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
 }
 
-
-#why-handmade .section-title{
-
-    color:#F7EFE3;
-
-    font-size:35px;
-
-    margin-bottom:30px;
-
+#why-handmade .section-title {
+    color: #F7EFE3;
+    font-size: 35px;
+    margin-bottom: 30px;
 }
 
-
-.why-grid{
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
-
-    gap:30px;
-
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
-
-.why-card{
-
-    background:#F7EFE3;
-
-    padding:30px;
-
-    border-radius:15px;
-
+.why-card {
+    background: #F7EFE3;
+    padding: 30px;
+    border-radius: 15px;
 }
 
-
-.why-card h3{
-
-    color:#641F2B;
-
-    font-size:25px;
-
-    margin-bottom:15px;
-
+.why-card h3 {
+    color: #641F2B;
 }
 
-
-.why-card p{
-
-    color:#4A2B2B;
-
-    font-size:18px;
-
-    line-height:1.5;
-
+.why-card p {
+    color: #4A2B2B;
 }
